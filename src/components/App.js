@@ -15,8 +15,10 @@ function App() {
       <IngredientsContextProvider>
         <main className="main">
           <OrderContextProvider>
-            <Hamburger />
-            <OrderIngredientsList />
+            <div className="orderPanel">
+              <Hamburger />
+              <OrderIngredientsList />
+            </div>
             <IngredientsList />
           </OrderContextProvider>
         </main>
