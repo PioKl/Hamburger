@@ -4,6 +4,7 @@ import IngredientsContextProvider from "../contexts/IngredientsContext";
 import OrderContextProvider from "../contexts/OrderContext";
 import IngredientsList from "./IngredientsList";
 import OrderIngredientsList from "./OrderIngredientsList";
+import Hamburger from "./Hamburger";
 import Footer from './Footer';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <IngredientsContextProvider>
         <main className="main">
           <OrderContextProvider>
+            <Hamburger />
             <OrderIngredientsList />
             <IngredientsList />
           </OrderContextProvider>
