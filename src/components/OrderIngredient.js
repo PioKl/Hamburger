@@ -8,10 +8,14 @@ const OrderIngredient = ({ orderIngredient }) => {
         removeIngredientFromOrder(orderIngredient.id)
     }
     return (
-        <button onClick={handleDeleteIngredient}>
-            <p>{orderIngredient.name}</p>
-            <p>{orderIngredient.prize}</p>
-        </button>
+        <>
+            {/* <div className={`orderIngredient orderIngredient-${orderIngredient.id}`}></div> */}
+            <button className={`orderIngredient orderIngredient-${orderIngredient.id}`} onClick={handleDeleteIngredient}>
+                <p>{orderIngredient.name}</p>
+                <p>{orderIngredient.prize}</p>
+            </button>
+        </>
+
     );
 }
 
