@@ -13,7 +13,7 @@ const IngredientsContextProvider = (props) => {
         { name: "lettuce", prize: 0.4, id: "5" },
         { name: "onion", prize: 0.2, id: "6" },
         { name: "tomato", prize: 0.5, id: "7" },
-        { name: "cuccumber", prize: 0.3, id: "8" },
+        { name: "cucumber", prize: 0.3, id: "8" },
         { name: "mushrooms", prize: 0.7, id: "9" },
         { name: "pepper", prize: 0.6, id: "10" },
     ]);
