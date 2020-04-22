@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { OrderContext } from '../contexts/OrderContext';
-
+import '../style/Ingredient.scss';
 
 const Ingredient = ({ ingredient }) => {
 
@@ -17,9 +17,9 @@ const Ingredient = ({ ingredient }) => {
                 setPrize(''); */
     }
     return (
-        <button className="ingredient" onClick={handleIngredient}>
-            <p>{ingredient.name}</p>
-            <p>{ingredient.prize}zł</p>
+        <button className={`ingredient ingredient-${ingredient.name}`} title={`${ingredient.name}`} alt={`${ingredient.name}Img`} onClick={handleIngredient}>
+            {/*        <p>{ingredient.name}</p>
+            <p>{ingredient.prize}zł</p> */}
         </button>
     );
 }
