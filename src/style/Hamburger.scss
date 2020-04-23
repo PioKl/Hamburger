@@ -1,0 +1,87 @@
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //margin-top: auto;
+}
+
+//zamiast w fr mieszać tu popracować z width i background-size dla mq
+.topBurger {
+    position: relative;
+    width: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bottomBurger {
+    position: relative;
+    width: 40%;
+    left: 50%;
+    bottom: .1%;
+    transform: translateX(-50.2%);
+}
+
+.burgerOrderedIngredient {
+    margin-bottom: -1px;
+    //height: 2.3rem;
+    height: 10%;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+}
+
+.chickenBurger {
+    //height: 3.7rem;
+    background-image: url("../img/chickenBurger.png");
+}
+
+.beefBurger {
+    background-image: url("../img/beefBurger.png");
+}
+
+.baconBurger {
+    height: 5%;
+    //height: .9rem;
+    background-image: url("../img/baconBurger.png");
+}
+
+.cheeseBurger {
+    height: 5%;
+    //height: .9rem;
+    background-image: url("../img/cheeseBurger.png");
+}
+
+.lettuceBurger {
+    height: 5%;
+    //height: .9rem;
+    background-image: url("../img/lettuceBurger.png");
+}
+
+.onionBurger {
+    height: 5%;
+    //height: .9rem;
+    background-image: url("../img/onionBurger.png");
+}
+
+.tomatoBurger {
+    height: 7%;
+    //height: .9rem;
+    background-image: url("../img/tomatoBurger.png");
+}
+
+.cucumberBurger {
+    height: 5%;
+    background-image: url("../img/cucumberBurger.png");
+}
+
+.mushroomsBurger {
+    height: 3%;
+    //height: .9rem;
+    background-image: url("../img/mushroomsBurger.png");
+}
+
+.pepperBurger {
+    height: 3%;
+    //height: .5rem;
+    background-image: url("../img/pepperBurger.png");
+}
