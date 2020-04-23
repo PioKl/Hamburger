@@ -4,14 +4,14 @@ import IngredientsContextProvider from "../contexts/IngredientsContext";
 import OrderContextProvider from "../contexts/OrderContext";
 import IngredientsList from "./IngredientsList";
 import OrderIngredientsList from "./OrderIngredientsList";
+import Header from "./Header";
 import Hamburger from "./Hamburger";
 import Footer from './Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="header">Dummy</header>
-
+      <Header />
       <IngredientsContextProvider>
         <main className="main">
           <OrderContextProvider>
