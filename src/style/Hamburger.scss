@@ -1,21 +1,47 @@
+$burgerImagesWidth: 30%;
+
 .burger {
     display: flex;
     flex-direction: column;
     justify-content: center;
     //margin-top: auto;
+    grid-column: 2/3;
+    grid-row: 1/ span 3;
+}
+
+.burger-summary {
+    height: 5rem;
+    //justify-self: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 30%;
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    margin-top: -12rem;
+
+    /*   grid-column: 2/3;
+    grid-row: 4/5;
+    margin-top: -15rem; */
+
+    /*     button {
+        margin-top: 1rem;
+        width: 100%;
+        height: 70%;
+    } */
 }
 
 //zamiast w fr mieszać tu popracować z width i background-size dla mq
 .topBurger {
     position: relative;
-    width: 40%;
+    width: $burgerImagesWidth;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .bottomBurger {
     position: relative;
-    width: 40%;
+    width: $burgerImagesWidth;
     left: 50%;
     bottom: .1%;
     transform: translateX(-50.2%);
@@ -26,7 +52,7 @@
     //height: 2.3rem;
     height: 10%;
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: $burgerImagesWidth;
     background-position: center;
 }
 
