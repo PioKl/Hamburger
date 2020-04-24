@@ -24,7 +24,8 @@ const Hamburger = () => {
     const orderedIngredients = orderIngredients.map((orderIngredient, index) => (
         <div key={index} className={`burgerOrderedIngredient ${orderIngredient.name}Burger`}></div>
     ))
-    /*     const orderedIngredients = orderIngredients.map((orderIngredient, index) => (
+    /*   ten sposób jest do wersji bardziej zautomatyzowanej  
+    const orderedIngredients = orderIngredients.map((orderIngredient, index) => (
             <img className="topBurger" alt="burger" key={index}
                 src={orderIngredient.name === "chicken" ? burgerIngredientsImg[0] :
                     orderIngredient.name === "beef" ? burgerIngredientsImg[1] :
