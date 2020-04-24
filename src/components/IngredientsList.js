@@ -10,7 +10,7 @@ const IngredientsList = () => {
     return (
         <div className="ingredients-panel">
             <div className="ingredientsLeft">
-                <h3>Wybierz składniki</h3>
+                <h4>Wybierz składniki</h4>
                 <p>Pozostało: {maxOrder - orderIngredients.length}</p>
             </div>
 
