@@ -4,9 +4,12 @@
     flex-direction: column; */
     display: flex;
     flex-direction: column;
-    /*     border: 1px solid red; */
+    /* border: 1px solid red; */
     text-align: center;
-    background-color: red;
+    //background-color: red;
+    margin-top: -5.5rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .ingredientsLeft {
@@ -14,14 +17,15 @@
 }
 
 .ingredients-list {
+    /* border: 1px solid red; */
     display: grid;
-    width: 50%;
-    margin: 0 auto;
+    /*     width: 50%;
+    margin: 0 auto; */
     grid-template-columns: repeat(auto-fit, minmax(11rem, 11rem));
     grid-auto-rows: 8rem;
     gap: 3rem;
     justify-content: center;
-    padding-bottom: 3rem;
+    padding: 3rem;
 
     @media only screen and (max-width: 1038px) {
         width: 100%;
