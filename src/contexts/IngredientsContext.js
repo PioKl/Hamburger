@@ -5,7 +5,7 @@ export const IngredientsContext = createContext();
 const maxOrder = 6;
 
 const IngredientsContextProvider = (props) => {
-    const [ingredients, setIngredients] = useState([
+    const [ingredients] = useState([
         { name: "chicken", prize: 3, id: "1" },
         { name: "beef", prize: 5, id: "2" },
         { name: "bacon", prize: 2, id: "3" },
