@@ -38,7 +38,30 @@ body,
   grid-template-columns: 11rem 1fr 11rem; */
   //grid-template-columns: 11rem 83.9rem 11rem;
   gap: 7.5rem;
-  padding: 2rem 15rem;
+  //padding: 2rem 15rem;
+
+  @media only screen and (max-width: 699px) {
+    grid-template-rows: 1fr repeat(2, 8rem);
+    grid-template-columns: 8rem 8rem 8rem;
+    gap: 3.5rem;
+    justify-content: center;
+    padding: 4rem 0 2rem 0;
+
+  }
+
+  @media only screen and (min-width: 700px) {
+    //https://bitsofco.de/how-calc-works/
+    //padding-left: calc(50vw + 50px);
+    //padding: 2rem calc(1vw + 6rem);
+    padding: 2rem calc(100vw / 30);
+    //padding: 2rem calc(5vw - 5em);
+    //padding: 2rem 15rem;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    padding: 2rem 15rem;
+  }
+
 }
 
 /* .burger {
