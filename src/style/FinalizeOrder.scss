@@ -13,6 +13,10 @@
     &:hover {
         animation: changingBoxShadow .8s ease-in-out infinite alternate;
     }
+
+    @media only screen and (max-width: 699px) {
+        margin-top: 1rem;
+    }
 }
 
 @keyframes changingBoxShadow {
