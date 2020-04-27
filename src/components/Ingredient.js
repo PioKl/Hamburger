@@ -4,7 +4,7 @@ import '../style/Ingredient.scss';
 
 const Ingredient = ({ ingredient }) => {
 
-    const { addIngredientToOrder } = useContext(OrderContext);
+    const { addIngredientToOrder, orderIngredients } = useContext(OrderContext);
     const name = ingredient.name;
     const prize = ingredient.prize;
 
@@ -17,7 +17,7 @@ const Ingredient = ({ ingredient }) => {
                 setPrize(''); */
     }
     return (
-        <button className={`ingredient ingredient-${ingredient.name}`} title={`${ingredient.name}`} alt={`${ingredient.name}Img`} onClick={handleIngredient}>
+        <button disabled={orderIngredients.length === 6 ? true : false} className={`ingredient btn-chooseIngredient ingredient-${ingredient.name}`} title={`${ingredient.name}`} alt={`${ingredient.name}Img`} onClick={handleIngredient}>
             {/*        <p>{ingredient.name}</p>
             <p>{ingredient.prize}zł</p> */}
         </button>
