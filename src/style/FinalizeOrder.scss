@@ -9,6 +9,9 @@
     //background-color: rgba(255, 138, 4, 0.856);
     color: #fff;
     cursor: pointer;
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
 
     &:hover {
         animation: changingBoxShadow .8s ease-in-out infinite alternate;
