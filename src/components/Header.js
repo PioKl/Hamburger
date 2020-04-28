@@ -4,7 +4,7 @@ import '../style/Header.scss';
 const Header = () => {
     return (
         <header className="header">
-            <h1>Burger Creator</h1>
+            <h1 className="header__primary">Burger Creator</h1>
         </header>
     );
 }
