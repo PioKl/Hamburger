@@ -7,14 +7,86 @@
     border-radius: 1rem;
     /* background-color: rgba(255, 238, 0, 0.233); */
     /* background-color: rgba(255, 238, 0, 0.527); */
+
+
+    &--chicken {
+        background-image: url("../img/chicken.png");
+        background-size: 80%;
+        background-position: center;
+    }
+
+    &--beef {
+        background-image: url("../img/beef.png");
+        background-size: 50%;
+        background-position: center;
+    }
+
+    &--bacon {
+        background-image: url("../img/bacon.png");
+        background-size: 80%;
+        background-position: center;
+    }
+
+    &--cheese {
+        background-image: url("../img/cheese.png");
+        background-size: 80%;
+        background-position: center;
+    }
+
+
+    &--lettuce {
+        background-image: url("../img/lettuce.png");
+        background-size: 50%;
+        background-position: center;
+    }
+
+    &--onion {
+        background-image: url("../img/onion.png");
+        background-size: 100%;
+        background-position: bottom;
+
+        @media only screen and (max-width: 699px) {
+            background-position: center;
+        }
+    }
+
+    &--tomato {
+        background-image: url("../img/tomato.png");
+        background-size: 60%;
+        background-position: center;
+    }
+
+    &--cucumber {
+        background-image: url("../img/cucumber.png");
+        background-size: 80%;
+        background-position: center;
+    }
+
+    &--mushrooms {
+        background-image: url("../img/mushrooms.png");
+        background-size: 60%;
+        background-position: center;
+    }
+
+    &--pepper {
+        background-image: url("../img/pepper.png");
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+    }
+
 }
 
 .btn-chooseIngredient {
     background-color: rgba(255, 238, 0, 0.233);
-    border: .1rem solid red;
+    border: .1rem solid rgb(94, 31, 31);
 
     &:hover {
         border: .5rem solid green;
+    }
+
+    &:active {
+        border: .7rem solid green;
     }
 }
 
@@ -29,7 +101,7 @@
     }
 }
 
-.ingredient-chicken {
+/* .ingredient-chicken {
     background-image: url("../img/chicken.png");
     background-size: 80%;
     background-position: center;
@@ -93,4 +165,4 @@
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: center;
-}
+} */
