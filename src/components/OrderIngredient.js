@@ -12,7 +12,7 @@ const OrderIngredient = ({ orderIngredient }) => {
     return (
         <>
             {/* <div className={`orderIngredient orderIngredient-${orderIngredient.id}`}></div> */}
-            <button title={`${orderIngredient.name}`} className={`ingredient ingredient-${orderIngredient.name} orderIngredient orderIngredient-${orderIngredient.id}`} onClick={handleDeleteIngredient}>
+            <button title={`${orderIngredient.name}`} className={`ingredient ingredient--${orderIngredient.name} orderIngredient orderIngredient-${orderIngredient.id}`} onClick={handleDeleteIngredient}>
                 {/*                 <p>{orderIngredient.name}</p>
                 <p>{orderIngredient.prize}</p> */}
             </button>
