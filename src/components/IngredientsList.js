@@ -8,13 +8,13 @@ const IngredientsList = () => {
     const { ingredients, maxOrder } = useContext(IngredientsContext);
     const { orderIngredients } = useContext(OrderContext);
     return (
-        <div className="ingredients-panel">
-            <div className="ingredientsLeft">
-                <h4>Wybierz składniki</h4>
-                <p>Pozostało: {maxOrder - orderIngredients.length}</p>
+        <div className="ingredientsPanel">
+            <div className="ingredientsInfo">
+                <h4 className="ingredientsInfo__title">Wybierz składniki</h4>
+                <p className="ingredientsInfo__left">Pozostało: {maxOrder - orderIngredients.length}</p>
             </div>
 
-            <div className="ingredients-list">
+            <div className="ingredientsList">
                 {ingredients.map(ingredient => {
                     return (<Ingredient ingredient={ingredient} key={ingredient.id} />);
                     /* return <li key={ingredient.id}>{ingredient.name}</li> */
