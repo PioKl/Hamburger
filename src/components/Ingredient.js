@@ -17,7 +17,7 @@ const Ingredient = ({ ingredient }) => {
                 setPrize(''); */
     }
     return (
-        <button disabled={orderIngredients.length === 6 ? true : false} className={`ingredient btn-chooseIngredient ingredient-${ingredient.name}`} title={`${ingredient.name}`} alt={`${ingredient.name}Img`} onClick={handleIngredient}>
+        <button disabled={orderIngredients.length === 6 ? true : false} className={`ingredient btn-chooseIngredient ingredient--${ingredient.name}`} title={`${ingredient.name}`} alt={`${ingredient.name}Img`} onClick={handleIngredient}>
             {/*        <p>{ingredient.name}</p>
             <p>{ingredient.prize}zł</p> */}
         </button>
