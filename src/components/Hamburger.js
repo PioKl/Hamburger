@@ -22,7 +22,7 @@ const Hamburger = () => {
             <li key={index}>{orderIngredient.name} img 2</li>
         )) */
     const orderedIngredients = orderIngredients.map((orderIngredient, index) => (
-        <div key={index} className={`burgerOrderedIngredient ${orderIngredient.name}Burger`}></div>
+        <div key={index} className={`burger__orderedIngredient burger__orderedIngredient--${orderIngredient.name}Burger`}></div>
     ))
     /*   ten sposób jest do wersji bardziej zautomatyzowanej  
     const orderedIngredients = orderIngredients.map((orderIngredient, index) => (
@@ -43,16 +43,16 @@ const Hamburger = () => {
         <>
             <div className="burger">
                 {/* <p>Góra buły img</p> */}
-                <img className="topBurger" src={topBurger} alt="topBurger" />
+                <img className="burger__top" src={topBurger} alt="top-roll-of-burger" />
                 {/* <ul> */}
                 {orderedIngredients}
                 {/* </ul> */}
-                <img className="bottomBurger" src={bottomBurger} alt="bottomBurger" />
+                <img className="burger__bottom" src={bottomBurger} alt="bottom-roll-of-Burger" />
                 {/* <p>Spód buły img</p> */}
                 {/* Warunek żeby nie było 0.00 na początku */}
             </div>
             <div className="burger-summary">
-                <p>Cena: {totalPrize > 0 ? totalPrize.toFixed(2) : totalPrize} zł</p>
+                <p className="burger-summary__prize">Cena: {totalPrize > 0 ? totalPrize.toFixed(2) : totalPrize} zł</p>
                 {totalPrize > 0 ? <FinalizeOrder /> : null}
             </div>
         </>
