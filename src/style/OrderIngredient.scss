@@ -16,6 +16,10 @@
     &:hover {
         border: .5rem solid red;
     }
+
+    &:active {
+        border: .7rem solid red;
+    }
 }
 
 .orderIngredient-0 {
