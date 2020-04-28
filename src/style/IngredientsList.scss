@@ -1,4 +1,4 @@
-.ingredients-panel {
+.ingredientsPanel {
     /*     display: flex;
     justify-content: center;
     flex-direction: column; */
@@ -7,20 +7,25 @@
     /* border: 1px solid red; */
     text-align: center;
     //background-color: red;
-    margin-top: -5.5rem;
+    //margin-top: -5.5rem;
     width: 100%;
-    margin: 0 auto;
+    //margin: 0 auto;
+    margin-top: 2rem;
 
     @media only screen and (max-width: 699px) {
-        margin-top: 2rem;
+        margin-top: 2.5rem;
     }
 }
 
-.ingredientsLeft {
+.ingredientsInfo {
     padding-bottom: 1rem;
+
+    @media only screen and (max-width: 699px) {
+        font-size: 1.6rem;
+    }
 }
 
-.ingredients-list {
+.ingredientsList {
     /* border: 1px solid red; */
     display: grid;
     /*     width: 50%;
