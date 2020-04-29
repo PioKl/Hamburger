@@ -7,17 +7,23 @@ const ThemeContextProvider = (props) => {
 
     const [isLight, setIsLight] = useState(true);
 
-    /*     const [light] = useState(
-            { bg: "black" },
-        ); */
+    const [light] = useState(
+        { bg: "red" },
+    );
+
+    const [dark] = useState(
+        { bg: "black" },
+    )
 
     const toggleTheme = () => {
         setIsLight(!isLight);
     }
 
     return (
-        <ThemeContextProvider value={{ toggleTheme }}>
+        <ThemeContext.Provider value={{ isLight, light, dark, toggleTheme }}>
             {props.children}
-        </ThemeContextProvider>
+        </ThemeContext.Provider>
     )
 }
+
+export default ThemeContextProvider;
