@@ -3,8 +3,11 @@
     height: 90%;
     margin: auto;
     //box-shadow: 0 0 .5rem .2rem rgba(161, 3, 3, 0.4);
-    background-color: rgba(161, 3, 3, 0.4);
     border-radius: 1rem;
+}
+
+.placeHolder {
+    background-color: rgba(161, 3, 3, 0.4);
 }
 
 .orderIngredient {
@@ -14,7 +17,7 @@
     border: 0;
 
     &:hover {
-        border: .5rem solid red;
+        border: .6rem solid red;
     }
 
     &:active {
