@@ -5,22 +5,26 @@ export const ThemeContext = createContext();
 
 const ThemeContextProvider = (props) => {
 
-    const [isLight, setIsLight] = useState(true);
+    const [isDark, setIsDark] = useState(true);
 
-    const [light] = useState(
-        { bg: "red" },
-    );
+    /*     const [light] = useState(
+            { bg: "red" },
+        ); */
 
     const [dark] = useState(
-        { bg: "black" },
+        {
+            bg: "#121212f6",
+            color: "rgba(255, 255, 255, 0.836)",
+            //bgHeaderFooter: "#cc7000",
+        }
     )
 
     const toggleTheme = () => {
-        setIsLight(!isLight);
+        setIsDark(!isDark);
     }
 
     return (
-        <ThemeContext.Provider value={{ isLight, light, dark, toggleTheme }}>
+        <ThemeContext.Provider value={{ isDark, dark, toggleTheme }}>
             {props.children}
         </ThemeContext.Provider>
     )
