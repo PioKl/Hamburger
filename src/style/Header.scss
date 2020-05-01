@@ -6,6 +6,16 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    font-family: 'Kaushan Script', cursive;
+
+    &__primary {
+        letter-spacing: .3rem;
+        font-size: 3.5rem;
+
+        @media only screen and (max-width: 699px) {
+            font-size: 2rem;
+        }
+    }
 
     &__change-input {
         visibility: hidden;
@@ -19,7 +29,8 @@
         width: 6rem;
         border-radius: 100rem;
         //background-color: rgb(0, 0, 0);
-        box-shadow: 0 0 2rem .9rem rgba(5, 5, 5, 0.1);
+        //box-shadow: 0 0 2rem .9rem rgba(5, 5, 5, 0.1);
+        box-shadow: 0 0 .1rem .2rem rgba(5, 5, 5, 0.1);
         cursor: pointer;
     }
 
