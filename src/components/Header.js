@@ -1,8 +1,10 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
+import { LanguageContext } from '../contexts/LanguageContext';
 import '../style/Header.scss';
 
 const Header = () => {
+    const { toggleLanguageChange } = useContext(LanguageContext);
     const { isDark, dark, toggleTheme } = useContext(ThemeContext);
     const theme = dark;
 
@@ -40,13 +42,23 @@ const Header = () => {
             {isDark ? null : <style>{darkMode}</style>}
             <header className="header" style={{}}>
                 <h1 className="header__primary">Burger Creator</h1>
-                <div className="header__changeMode">
-                    <input className="header__change-input" type="checkbox" name="mode" id="mode" onChange={toggleTheme} />
-                    <label className="header__mode" htmlFor="mode">
-                        <span className="header__sun"></span>
-                        <span className="header__moon"></span>
-                        <span className="header__slider"></span>
-                    </label>
+                <div className="changesPanel">
+                    <div className="header__changeMode">
+                        <input className="header__change-input" type="checkbox" name="mode" id="mode" onChange={toggleTheme} />
+                        <label className="header__mode" htmlFor="mode">
+                            <span className="header__sun"></span>
+                            <span className="header__moon"></span>
+                            <span className="header__slider"></span>
+                        </label>
+                    </div>
+                    <div className="header__changeLanguage">
+                        <input className="header__change-input" type="checkbox" name="language" id="language" onChange={toggleLanguageChange} />
+                        <label htmlFor="language" className="header__language">
+                            <span className="header__eng"></span>
+                            <span className="header__pl"></span>
+                            <span className="header__slider"></span>
+                        </label>
+                    </div>
                 </div>
                 {/* <button onClick={toggleTheme}>Change Theme</button> */}
             </header>
