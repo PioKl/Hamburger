@@ -2,9 +2,11 @@ import React, { useContext } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
 import { LanguageContext } from '../contexts/LanguageContext';
 import '../style/Header.scss';
+import { ReactComponent as EngIcon } from '../svg/eng.svg';
+import { ReactComponent as PlIcon } from '../svg/pol.svg';
 
 const Header = () => {
-    const { toggleLanguageChange } = useContext(LanguageContext);
+    const { isLanguageChange, toggleLanguageChange } = useContext(LanguageContext);
     const { isDark, dark, toggleTheme } = useContext(ThemeContext);
     const theme = dark;
 
@@ -54,9 +56,10 @@ const Header = () => {
                     <div className="header__changeLanguage">
                         <input className="header__change-input" type="checkbox" name="language" id="language" onChange={toggleLanguageChange} />
                         <label htmlFor="language" className="header__language">
-                            <span className="header__eng"></span>
+                            {isLanguageChange ? <PlIcon className='header__language--icon header__pl' width='2rem' /> : <EngIcon className='header__language--icon header__eng' width='2rem' />}
+                            {/*                             <span className="header__eng"></span>
                             <span className="header__pl"></span>
-                            <span className="header__slider"></span>
+                            <span className="header__slider"></span> */}
                         </label>
                     </div>
                 </div>
