@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { LanguageContext } from "../contexts/LanguageContext";
 import { OrderContext } from "../contexts/OrderContext";
 import FinalizeOrder from "./FinalizeOrder";
 import topBurger from "../img/topBurger.png"
@@ -16,6 +17,7 @@ import tomato from "../img/tomatoBurger.png" */
 import '../style/Hamburger.scss';
 
 const Hamburger = () => {
+    const { isLanguageChange, eng, pl } = useContext(LanguageContext);
     /* const burgerIngredientsImg = [chicken, beef, bacon, cheese, cucumber, lettuce, onion, mushrooms, pepper, tomato]; */
     const { orderIngredients, totalPrize } = useContext(OrderContext);
     /*     const orderedIngredients = orderIngredients.map((orderIngredient, index) => (
@@ -52,7 +54,7 @@ const Hamburger = () => {
                 {/* Warunek żeby nie było 0.00 na początku */}
             </div>
             <div className="burger-summary">
-                <p className="burger-summary__prize">Cena: {totalPrize > 0 ? totalPrize.toFixed(2) : totalPrize} zł</p>
+                <p className="burger-summary__prize">{isLanguageChange ? eng.prize : pl.prize}{totalPrize > 0 ? totalPrize.toFixed(2) : totalPrize} zł</p>
                 {totalPrize > 0 ? <FinalizeOrder /> : null}
             </div>
         </>
