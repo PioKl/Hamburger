@@ -1,18 +1,3 @@
-//Celowo zostawione dwa sposoby, jeden przy uzyciu mixin, a drugi zwyczajnie
-/* @mixin changeBoxShadowAnimation($boxShadowColorOne, $boxShadowColorTwo) {
-    animation: changingBoxShadow2 .8s ease-in-out infinite alternate;
-
-    @keyframes changingBoxShadow2 {
-        from {
-            box-shadow: 0 0 .1rem .2rem $boxShadowColorOne;
-        }
-
-        to {
-            box-shadow: 0 0 .1rem .2rem $boxShadowColorTwo;
-        }
-    }
-} */
-
 .button-order {
     margin-top: 2rem;
     width: 100%;
