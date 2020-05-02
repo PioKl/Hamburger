@@ -15,6 +15,15 @@
         @media only screen and (max-width: 699px) {
             font-size: 2rem;
         }
+
+        @media only screen and (max-width: 380px) {
+            font-size: 1.6rem;
+            line-height: 3;
+        }
+    }
+
+    &__changesPanel {
+        display: flex;
     }
 
     &__change-input {
@@ -32,6 +41,12 @@
         //box-shadow: 0 0 2rem .9rem rgba(5, 5, 5, 0.1);
         box-shadow: 0 0 .1rem .2rem rgba(5, 5, 5, 0.1);
         cursor: pointer;
+
+        @media only screen and (max-width: 699px) {
+            right: 1.6rem;
+            height: 1.8rem;
+            width: 5rem;
+        }
     }
 
     &__sun::before {
@@ -43,6 +58,11 @@
         top: 16%;
         color: yellow;
         font-weight: 700;
+
+        @media only screen and (max-width: 699px) {
+            font-size: 1.3rem;
+            left: 7%;
+        }
     }
 
     &__moon::before {
@@ -54,6 +74,10 @@
         top: 12%;
         color: rgb(94, 69, 69);
         font-weight: 700;
+
+        @media only screen and (max-width: 699px) {
+            font-size: 1rem;
+        }
     }
 
     &__slider {
@@ -66,6 +90,11 @@
         background-color: rgb(159, 151, 163);
         transition: .4s;
         border-radius: 50%;
+
+        @media only screen and (max-width: 699px) {
+            height: 1.83rem;
+            width: 1.83rem;
+        }
     }
 
     input:checked+&__mode {
@@ -75,7 +104,29 @@
 
     }
 
-    &__language {
+    &__icon {
+        height: 2.2rem;
+        width: 2.2rem;
+        position: absolute;
+        right: 10rem;
+        /*             position: absolute;
+        bottom: -5%;
+        right: 2.5rem; */
+        cursor: pointer;
+
+        @media only screen and (max-width: 699px) {
+            bottom: 30%;
+            right: 8rem;
+        }
+
+        &--pl {
+            stroke: black;
+            stroke-width: .5rem;
+            stroke-linejoin: round;
+        }
+    }
+
+    /*     &__language {
         //position: absolute;
         //bottom: -10%;
         //display: inline-block;
@@ -83,12 +134,5 @@
         //height: 2.2rem;
         //width: 6rem;
         //border-radius: 100rem;
-
-        &--icon {
-            position: absolute;
-            bottom: -5%;
-            right: 2.5rem;
-            cursor: pointer;
-        }
-    }
+    } */
 }
