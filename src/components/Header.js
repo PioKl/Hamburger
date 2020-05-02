@@ -44,7 +44,7 @@ const Header = () => {
             {isDark ? null : <style>{darkMode}</style>}
             <header className="header" style={{}}>
                 <h1 className="header__primary">Burger Creator</h1>
-                <div className="changesPanel">
+                <div className="header__changesPanel">
                     <div className="header__changeMode">
                         <input className="header__change-input" type="checkbox" name="mode" id="mode" onChange={toggleTheme} />
                         <label className="header__mode" htmlFor="mode">
@@ -56,7 +56,8 @@ const Header = () => {
                     <div className="header__changeLanguage">
                         <input className="header__change-input" type="checkbox" name="language" id="language" onChange={toggleLanguageChange} />
                         <label htmlFor="language" className="header__language">
-                            {isLanguageChange ? <PlIcon className='header__language--icon header__pl' width='2rem' /> : <EngIcon className='header__language--icon header__eng' width='2rem' />}
+                            {isLanguageChange ? <PlIcon title="Polish" className='header__icon header__icon--pl' /> :
+                                <EngIcon title="English" className='header__icon header__icon--eng' />}
                             {/*                             <span className="header__eng"></span>
                             <span className="header__pl"></span>
                             <span className="header__slider"></span> */}
