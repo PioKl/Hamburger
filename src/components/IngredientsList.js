@@ -19,7 +19,6 @@ const IngredientsList = () => {
             <div className="ingredientsList">
                 {ingredients.map(ingredient => {
                     return (<Ingredient ingredient={ingredient} key={ingredient.id} />);
-                    /* return <li key={ingredient.id}>{ingredient.name}</li> */
                 })}
             </div>
         </div>

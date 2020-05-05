@@ -1,13 +1,7 @@
-/* $burgerImagesWidth: 30%;
-$burgerImagesWidthBig: 80%;
- */
-/* @media only screen and (min-width: 1200px) {} */
-
 .burger {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    //margin-top: auto;
     grid-column: 2/3;
     grid-row: 1/ span 3;
 
@@ -127,14 +121,11 @@ $burgerImagesWidthBig: 80%;
 
 .burger-summary {
     height: 5rem;
-    //justify-self: center;
     text-align: center;
     margin: 0 auto;
-    //width: 30%;
     align-self: center;
     grid-column: 2/3;
     grid-row: 4/5;
-    //margin-top: -12rem;
     margin-top: -10rem;
     position: relative;
 
@@ -154,119 +145,6 @@ $burgerImagesWidthBig: 80%;
     }
 }
 
-//zamiast w fr mieszać tu popracować z width i background-size dla mq
-/* .topBurger {
-    position: relative;
-    left: 50%; 
-    transform: translateX(-50%);
-}
-
-.bottomBurger {
-    position: relative;
-    left: 50%;
-    bottom: .1%;
-    transform: translateX(-50.2%);
-} */
-
-
-/* .burgerOrderedIngredient {
-    margin-bottom: -1px;
-    //height: 2.3rem;
-    height: 10%;
-    background-repeat: no-repeat;
-    //background-size: $burgerImagesWidth;
-    background-position: center;
-} */
-
-/* .chickenBurger {
-    //height: 3.7rem;
-    background-image: url("../img/chickenBurger.png");
-}
-
-.beefBurger {
-    background-image: url("../img/beefBurger.png");
-}
-
-.baconBurger {
-    height: 5%;
-    //height: .9rem;
-    background-image: url("../img/baconBurger.png");
-}
-
-.cheeseBurger {
-    height: 5%;
-    //height: .9rem;
-    background-image: url("../img/cheeseBurger.png");
-}
-
-.lettuceBurger {
-    height: 5%;
-    //height: .9rem;
-    background-image: url("../img/lettuceBurger.png");
-}
-
-.onionBurger {
-    height: 5%;
-    //height: .9rem;
-    background-image: url("../img/onionBurger.png");
-}
-
-.tomatoBurger {
-    height: 7%;
-    //height: .9rem;
-    background-image: url("../img/tomatoBurger.png");
-}
-
-.cucumberBurger {
-    height: 5%;
-    background-image: url("../img/cucumberBurger.png");
-}
-
-.mushroomsBurger {
-    height: 3%;
-    //height: .9rem;
-    background-image: url("../img/mushroomsBurger.png");
-}
-
-.pepperBurger {
-    height: 3%;
-    //height: .5rem;
-    background-image: url("../img/pepperBurger.png");
-} */
-
-
-@media only screen and (max-width: 699px) {
-
-    /*     .topBurger,
-    .bottomBurger {
-        width: 80%;
-    }
-
-    .burgerOrderedIngredient {
-        height: 4rem;
-        background-size: 80%;
-    } */
-
-    /*     .tomatoBurger {
-        height: 3rem;
-    } */
-
-    /* 
-    .baconBurger,
-    .cheeseBurger,
-    .lettuceBurger,
-    .onionBurger,
-    .cucumberBurger {
-        height: 2rem;
-    } */
-
-    /*     .pepperBurger,
-    .mushroomsBurger {
-        height: 1.5rem;
-    } */
-
-}
-
 @media only screen and (min-width: 700px) {
 
     .burger__top,
@@ -274,17 +152,4 @@ $burgerImagesWidthBig: 80%;
     .burger-summary {
         width: calc(10vw + 15rem);
     }
-
-    /*     .topBurger,
-    .bottomBurger,
-    .burger-summary {
-        //width: $burgerImagesWidthBig;
-        //width: calc(100vw / 5.9);
-        width: calc(10vw + 15rem);
-    } */
-
-    /*     .burgerOrderedIngredient {
-        background-size: calc(10vw + 15rem);
-        //background-size: calc(100vw / 5.9);
-    } */
 }

@@ -1,15 +1,8 @@
 .ingredientsPanel {
-    /*     display: flex;
-    justify-content: center;
-    flex-direction: column; */
     display: flex;
     flex-direction: column;
-    /* border: 1px solid red; */
     text-align: center;
-    //background-color: red;
-    //margin-top: -5.5rem;
     width: 100%;
-    //margin: 0 auto;
     margin-top: 2rem;
 
     @media only screen and (max-width: 699px) {
@@ -26,11 +19,7 @@
 }
 
 .ingredientsList {
-    /* border: 1px solid red; */
     display: grid;
-    /*     width: 50%;
-    margin: 0 auto; */
-    //grid-template-columns: repeat(auto-fit, minmax(11rem, 11rem));
     grid-template-columns: repeat(auto-fit, 11rem);
     grid-auto-rows: 8rem;
     gap: 3rem;

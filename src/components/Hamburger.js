@@ -20,9 +20,6 @@ const Hamburger = () => {
     const { isLanguageChange, eng, pl } = useContext(LanguageContext);
     /* const burgerIngredientsImg = [chicken, beef, bacon, cheese, cucumber, lettuce, onion, mushrooms, pepper, tomato]; */
     const { orderIngredients, totalPrize } = useContext(OrderContext);
-    /*     const orderedIngredients = orderIngredients.map((orderIngredient, index) => (
-            <li key={index}>{orderIngredient.name} img 2</li>
-        )) */
     const orderedIngredients = orderIngredients.map((orderIngredient, index) => (
         <div key={index} className={`burger__orderedIngredient burger__orderedIngredient--${orderIngredient.name}Burger`}></div>
     ))
@@ -44,14 +41,9 @@ const Hamburger = () => {
     return (
         <>
             <div className="burger">
-                {/* <p>Góra buły img</p> */}
                 <img className="burger__top" src={topBurger} alt="top-roll-of-burger" />
-                {/* <ul> */}
                 {orderedIngredients}
-                {/* </ul> */}
                 <img className="burger__bottom" src={bottomBurger} alt="bottom-roll-of-Burger" />
-                {/* <p>Spód buły img</p> */}
-                {/* Warunek żeby nie było 0.00 na początku */}
             </div>
             <div className="burger-summary">
                 <p className="burger-summary__prize">{isLanguageChange ? eng.prize : pl.prize}{totalPrize > 0 ? totalPrize.toFixed(2) : totalPrize} zł</p>

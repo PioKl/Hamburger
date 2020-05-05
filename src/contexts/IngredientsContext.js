@@ -17,14 +17,6 @@ const IngredientsContextProvider = (props) => {
         { name: "mushrooms", prize: 0.7, id: "9" },
         { name: "pepper", prize: 0.6, id: "10" },
     ]);
-    /*     const [ingredientsPl, setIngredientsPL] = useState([
-            { name: "kurczak", prize: "3", id: "1" },
-            { name: "wołowina", prize: "5", id: "2" },
-            { name: "ser", prize: "2", id: "3" },
-            { name: "sałata", prize: "0.4", id: "4" },
-            { name: "cebula", prize: "0.2", id: "5" },
-            { name: "pomidor", prize: "0.5", id: "6" },
-        ]); */
 
     return (
         <IngredientsContext.Provider value={{ ingredients, maxOrder }}>
