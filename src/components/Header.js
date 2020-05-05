@@ -10,7 +10,6 @@ const Header = () => {
     const { isDark, dark, toggleTheme } = useContext(ThemeContext);
     const theme = dark;
 
-    //#FFFDD0
     const darkMode = `
     .App { background-color: ${theme.bg}; color: ${theme.color} }
     .header, .footer {box-shadow: 0 0 12rem .9rem rgb(255, 255, 225, 0.1)}
@@ -32,18 +31,11 @@ const Header = () => {
         }
     `;
 
-
-
-    /*     const newStyle = {
-            backgroundColor: theme.bg,
-            header__primary: 
-        } */
-
     return (
         <>
             {isDark ? null : <style>{darkMode}</style>}
-            <header className="header" style={{}}>
-                <h1 className="header__primary">Burger Creator</h1>
+            <header className="header">
+                <h1 className="header__primary">{isLanguageChange ? "Burger Creator" : "Kreator Burgera"}</h1>
                 <div className="header__changesPanel">
                     <div className="header__changeMode">
                         <input className="header__change-input" type="checkbox" name="mode" id="mode" onChange={toggleTheme} />
@@ -58,13 +50,9 @@ const Header = () => {
                         <label htmlFor="language" className="header__language">
                             {isLanguageChange ? <PlIcon title="Polish" className='header__icon header__icon--pl' /> :
                                 <EngIcon title="English" className='header__icon header__icon--eng' />}
-                            {/*                             <span className="header__eng"></span>
-                            <span className="header__pl"></span>
-                            <span className="header__slider"></span> */}
                         </label>
                     </div>
                 </div>
-                {/* <button onClick={toggleTheme}>Change Theme</button> */}
             </header>
         </>
     );
