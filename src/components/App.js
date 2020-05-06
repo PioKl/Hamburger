@@ -4,6 +4,7 @@ import LanguageContextProvider from "../contexts/LanguageContext";
 import ThemeContextProvider from "../contexts/ThemeContext";
 import IngredientsContextProvider from "../contexts/IngredientsContext";
 import OrderContextProvider from "../contexts/OrderContext";
+import ConfirmationContextProvider from "../contexts/ConfirmationContext";
 import IngredientsList from "./IngredientsList";
 import OrderIngredientsList from "./OrderIngredientsList";
 import Header from "./Header";
@@ -19,11 +20,13 @@ function App() {
           <IngredientsContextProvider>
             <main className="main">
               <OrderContextProvider>
-                <div className="orderPanel">
-                  <Hamburger />
-                  <OrderIngredientsList />
-                </div>
-                <IngredientsList />
+                <ConfirmationContextProvider>
+                  <div className="orderPanel">
+                    <Hamburger />
+                    <OrderIngredientsList />
+                  </div>
+                  <IngredientsList />
+                </ConfirmationContextProvider>
               </OrderContextProvider>
             </main>
           </IngredientsContextProvider>
