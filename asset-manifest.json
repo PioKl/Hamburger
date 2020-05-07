@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Hamburger/static/css/main.63e6ab50.chunk.css",
+    "main.js": "/Hamburger/static/js/main.2d18411c.chunk.js",
+    "main.js.map": "/Hamburger/static/js/main.2d18411c.chunk.js.map",
+    "runtime-main.js": "/Hamburger/static/js/runtime-main.1ec9ae2a.js",
+    "runtime-main.js.map": "/Hamburger/static/js/runtime-main.1ec9ae2a.js.map",
+    "static/js/2.efc50803.chunk.js": "/Hamburger/static/js/2.efc50803.chunk.js",
+    "static/js/2.efc50803.chunk.js.map": "/Hamburger/static/js/2.efc50803.chunk.js.map",
+    "index.html": "/Hamburger/index.html",
+    "precache-manifest.c31ef3da4ceea4a67f124fd1e775331f.js": "/Hamburger/precache-manifest.c31ef3da4ceea4a67f124fd1e775331f.js",
+    "service-worker.js": "/Hamburger/service-worker.js",
+    "static/css/main.63e6ab50.chunk.css.map": "/Hamburger/static/css/main.63e6ab50.chunk.css.map",
+    "static/js/2.efc50803.chunk.js.LICENSE.txt": "/Hamburger/static/js/2.efc50803.chunk.js.LICENSE.txt",
+    "static/media/Ingredient.scss": "/Hamburger/static/media/tomato.f57ede16.png",
+    "static/media/eng.386cc387.svg": "/Hamburger/static/media/eng.386cc387.svg",
+    "static/media/pol.bd4c370a.svg": "/Hamburger/static/media/pol.bd4c370a.svg",
+    "static/media/topBurger.png": "/Hamburger/static/media/topBurger.abacbf15.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1ec9ae2a.js",
+    "static/js/2.efc50803.chunk.js",
+    "static/css/main.63e6ab50.chunk.css",
+    "static/js/main.2d18411c.chunk.js"
+  ]
+}
