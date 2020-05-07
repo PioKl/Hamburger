@@ -11,10 +11,10 @@ const FinalizeOrder = () => {
     const { showConfirmation, showConfirmationWindow } = useContext(ConfirmationContext);
     return (
         <>
-            {/* Confirm customowy lepiej zrobić, coś podobnego robiłem w rock paper scissors */}
+            {/* To jest confirm zrobiony za pomocą window, wtedy nie trzeba tworzyć kontekstów, styli, darkMode, itp, ale nie można go modyfikować (dodałem customowy confirm, ale jakbym chciał się zrezygnować z niego to muszę usunąc wszystko co wiąże się z ConfirmOrder, ConfirmationContext, zmiany w darkMode w Header, w ThemeContext, App) */}
             {/*             <button title={isLanguageChange ? eng.order : pl.order} className="burger-summary__order button-order" onClick={() => window.confirm(`${isLanguageChange ? "Are you sure?" : "Jesteś pewien?"}`) ? resetOrder() : null}>{isLanguageChange ? eng.order : pl.order}</button>
             <button title={isLanguageChange ? eng.reset : pl.reset} className="burger-summary__reset button-reset" onClick={() => resetOrder()}>X</button> */}
-            <button title={isLanguageChange ? eng.order : pl.order} className="burger-summary__order button-order" onClick={() => showConfirmationWindow()}>{isLanguageChange ? eng.order : pl.order}</button>
+            <button disabled={showConfirmation ? true : false} title={isLanguageChange ? eng.order : pl.order} className="burger-summary__order button-order" onClick={() => showConfirmationWindow()}>{isLanguageChange ? eng.order : pl.order}</button>
             <button title={isLanguageChange ? eng.reset : pl.reset} className="burger-summary__reset button-reset" onClick={() => resetOrder()}>X</button>
             {showConfirmation ? <ConfirmOrder /> : null}
         </>
