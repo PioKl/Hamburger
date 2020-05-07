@@ -2,8 +2,9 @@ $alertBorderRadius: 2rem;
 
 .burger-alert {
     position: fixed;
-    background-color: red;
+    background-color: wheat;
     border-radius: $alertBorderRadius;
+    box-shadow: 0 0 1rem 1rem rgba(5, 5, 5, 0.1);
     width: 40vw;
     height: 40vh;
     top: 50%;
@@ -13,48 +14,55 @@ $alertBorderRadius: 2rem;
     flex-direction: column;
     z-index: 100;
 
+    @media only screen and (max-width: 699px) {
+        width: 60vw;
+        min-width: 28rem;
+        height: 40vh;
+    }
+
     &__inform {
         margin-top: auto;
+        font-size: 1.4rem;
+
+        @media only screen and (max-width: 699px) {
+            font-size: 1.2rem;
+        }
+    }
+
+    &__primary {
+        padding: 0 1rem;
+        word-wrap: break-word;
     }
 
     &__confirmation {
         display: flex;
-        justify-content: space-between;
         margin-top: auto;
     }
 
     &__button {
-        width: 25vw;
+        width: 50%;
         height: 10vh;
         cursor: pointer;
         border: 0;
+        color: white;
+        font-family: inherit;
 
         &--confirm {
-            border-bottom-left-radius: 1.8rem;
-            background-color: #fff;
+            border-bottom-left-radius: $alertBorderRadius - .2rem;
+            background-color: #46d646;
+
+            &:hover {
+                background-color: darken(#46d646, 10%);
+            }
         }
 
         &--cancel {
-            border-bottom-right-radius: 1.8rem;
+            border-bottom-right-radius: $alertBorderRadius - .2rem;
+            background-color: red;
+
+            &:hover {
+                background-color: darken(red, 10%)
+            }
         }
     }
 }
-
-
-/* .burger-confirmation {
-    background-color: red;
-    position: fixed;
-    width: 50vw;
-    height: 50vh;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-
-    &__button {
-        width: 25vw;
-        height: 10vh;
-    }
-} */
