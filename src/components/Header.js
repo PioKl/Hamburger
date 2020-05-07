@@ -17,6 +17,7 @@ const Header = () => {
     .placeHolder { background-color: rgba(255, 253, 208, 0.201)}
     .orderIngredient {background-color: rgba(255, 255, 0, 0.723)}
     .orderIngredient:hover {border: .6rem solid #CC0000}
+    .orderIngredient:disabled {border: 0; opacity: 0.5}
     .btn-chooseIngredient {background-color: #801336;}
     .btn-chooseIngredient:hover {border: .5rem solid #158000}
     .btn-chooseIngredient:active {border: .7rem solid #158000}
