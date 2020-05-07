@@ -21,6 +21,13 @@
     &:active {
         border: .7rem solid red;
     }
+
+    &:disabled {
+        background-color: grey;
+        border: 0;
+        opacity: 0.8;
+        cursor: no-drop;
+    }
 }
 
 .orderIngredient-0 {
