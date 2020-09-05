@@ -1,7 +1,7 @@
  https://piokl.github.io/Hamburger/
  
- Aplikacja umożliwiająca stworzenie własnego burgera. Głównie w niej wykorzystywane jest ContextApi wraz z Hookami w celu stworzenia zmiany języka aplikacji, trybu ciemnego/jasnego, używania składników w różnych komponentach, czy dodawania składników do zamówienia i ich usuwania.
-
+ Aplikacja umożliwiająca stworzenie własnego burgera. Głównie w niej wykorzystywane jest Context Api wraz z Hookami w celu stworzenia zmiany języka aplikacji, trybu ciemnego/jasnego, używania składników w różnych komponentach, czy dodawania składników do zamówienia i ich usuwania. 
+ 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
